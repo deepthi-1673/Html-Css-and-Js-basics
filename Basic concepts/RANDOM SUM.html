@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RANDOM SUM</title>
+    <style>
+        table {
+            border-collapse: seperate;
+            border-spacing: 30px;
+            padding: 10px;
+            width: 500px;
+        }
+
+        td {
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 10px;
+            text-align: center;
+            padding: 5px;
+            width: 300px;
+            color: black;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px yellow;
+            font-size: 23px;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            /* background-image: url("https://www.whoa.in/download/funny-minions-with-funny-line-i-didnt-lose-my-mind-hd-wallpaper");*/
+            /*background-image: url("https://wallpaper.dog/large/5484792.jpg");*/
+            background-image: url("https://wallpapercave.com/wp/wp5106683.png");
+        }
+    </style>
+</head>
+<body>
+    <p1 style="color:aliceblue; font-family:'BankGothic Md BT';font-size:20px;">CLICK ON START</p1>
+    <button onclick="myFunction()">START</button>
+    <br />
+    <p id="dee" style="color: antiquewhite; font-size: 20px; font-family:'BankGothic Md BT';">DIAGNOL SUM=</p>
+    <table>
+        <tr style="height:80px">
+            <td bgcolor="ffb3d9"><p id="1"></p></td>
+            <td bgcolor="99ffbb"><p id="2"></p> </td>
+            <td bgcolor="ccccff"><p id="3"></p></td>
+            <td bgcolor="d5ff80"><p id="4"></p></td>
+        </tr>
+        <tr style="height:80px">
+            <td bgcolor="e6e600"><p id="5"></p></td>
+            <td bgcolor="ff9999"><p id="6"></p></td>
+            <td bgcolor="ff6666"><p id="7"></p></td>
+            <td bgcolor="ffebcc"><p id="8"></p></td>
+        </tr>
+        <tr style="height:80px">
+            <td bgcolor="ffff66"><p id="9"></p></td>
+            <td bgcolor="80ff80"><p id="10"></p></td>
+            <td bgcolor="c299ff"><p id="11"></p></td>
+            <td bgcolor="ff80ff"><p id="12"></p></td>
+        </tr>
+        <tr style="height:80px">
+            <td bgcolor="66ffff"><p id="13"></p></td>
+            <td bgcolor="ffbb99"><p id="14"></p></td>
+            <td bgcolor="e6b3cc"><p id="15"></p></td>
+            <td bgcolor="ffbf80"><p id="16"></p></td>
+        </tr>
+    </table>
+    <script>
+        function myFunction() {
+            let sum = 0;
+            for (var x = 1; x <= 16; x++) {
+                let t = Math.floor((Math.random() * 101));
+                document.getElementById(x.toString()).innerHTML = t;
+                if (x == 1 || x == 6 || x == 11 || x == 16 || x == 4 || x == 7 || x == 10 || x == 13) {
+                    sum = sum + t;
+                }
+            }
+            document.getElementById("dee").innerHTML = sum;
+        }
+    </script>
+
+
+</body>
+</html>

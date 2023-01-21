@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RANDOM COUNT</title>
+   
+    <style>
+        table{
+            border-collapse:revert;
+            width: 150px;
+            height: 20px;
+            text-align:center;
+            border-spacing: 10px;
+            position: center;
+        }
+        td {
+            height:50px;
+            text-align:center;
+            padding:10px 20px;
+            color: black;
+            text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px black;
+            font-size: 18px;
+        }
+        .button{
+            padding:0px 20px;
+            width:100px;
+            text-align:revert;
+            height:fit-content;
+            color:black;
+            cursor:pointer;
+            font-size:24px;
+        }
+        .button-group {
+            display:inline-block;
+            border-spacing: 100px 200px;
+            height:10px;
+        }
+        
+        
+        body {
+            background-image: url("https://as2.ftcdn.net/v2/jpg/02/03/19/99/1000_F_203199959_ObqFaJd2KBE7p9ezoPr4DTiezpE6TAYi.jpg");
+        }
+       
+    </style>
+</head>
+<body>
+    <p id="dee" style="color: black; font-size: 30px; font-family:'BankGothic Md BT'">TRY THIS GAME</p>
+    <table align="center">
+       <div class="button-group" style="border-spacing:100px 50px;">
+          <tr>
+        
+            <td><button class="button" type="button" style="color:red;"><p id="10">0</p></button></td>
+            <td><button class="button" type="button" style="color:greenyellow;"><p id="20">0</p></td>
+            <td><button class="button" type="button" style="color:blue;"><p id="30">0</p></button></td>
+            <td><button class="button" type="button" style="color:yellow;"><p id="40">0</p></button></td>
+         </tr>
+
+
+          <tr>
+              <td><button onclick="myFunction1()" class="button" type="button" style="color:black; background-color:greenyellow;"><p id="1">4</p></button></td>
+              <td><button onclick="myFunction2()" class="button" type="button" style="color:black; background-color:yellow;"><p id="2">5</p></button></td>
+              <td><button onclick="myFunction3()" class="button" type="button" style="color:black; background-color:red;"><p id="3">7</p></button></td>
+              <td><button onclick="myFunction4()" class="button" type="button" style="color:black; background-color:blue;"><p id="4">6</p></button></td>
+          </tr>
+          <tr>
+             <td><button onclick="myFunction2()" class="button" type="button" style="color: black; background-color: yellow;"><p id="2">5</p></button></td>
+             <td><button onclick="myFunction3()" class="button" type="button" style="color:black; background-color:red;"><p id="3">7</p></button></td>
+             <td><button onclick="myFunction4()" class="button" type="button" style="color:black; background-color:blue;"><p id="4">6</p></button></td>
+             <td><button onclick="myFunction1()" class="button" type="button" style="color: black; background-color: greenyellow;"><p id="1">4</p></button></td>
+          </tr>
+          <tr>
+            <td><button onclick="myFunction4()" class="button" type="button" style="color:black; background-color:blue;"><p id="4">6</p></button></td>
+            <td><button onclick="myFunction1()" class="button" type="button" style="color: black; background-color: greenyellow; "><p id="1">4</p></button></td>
+            <td><button onclick="myFunction2()" class="button" type="button" style="color: black; background-color: yellow;"><p id="2">5</p></button></td>
+            <td><button onclick="myFunction3()" class="button" type="button" style="color:black; background-color:red;"><p id="3">7</p></button></td>
+          </tr>
+          <tr>
+            <td><button onclick="myFunction1()" class="button" type="button" style="color: black; background-color: greenyellow; "><p id="3">4</p></button></td>
+            <td><button onclick="myFunction4()" class="button" type="button" style="color:black; background-color:blue;"><p id="4">6</p></button></td>
+            <td><button onclick="myFunction3()" class="button" type="button" style="color:black; background-color:red;"><p id="1">7</p></button></td>
+            <td><button onclick="myFunction2()" class="button" type="button" style="color: black; background-color: yellow;"><p id="2">5</p></button></td>
+          </tr>
+    </div>
+
+
+
+    </table>
+    <script>
+        let sum = 0;
+       
+        let c1 = 0;
+        let c2 = 0;
+        let c3 = 0;
+        let c4 = 0;
+            function myFunction1() {
+               
+                 c1 = c1 + 1;
+
+                sum = sum + 4;
+                document.getElementById("20").innerHTML = c1;
+                document.getElementById("dee").innerHTML = sum;
+
+
+            }
+            function myFunction2() {
+               
+                c2 = c2 + 1;
+                sum = sum + 5;
+                document.getElementById("40").innerHTML = c2;
+                document.getElementById("dee").innerHTML = sum;
+            }
+            function myFunction3() {
+                
+
+                c3 = c3 + 1;
+                sum = sum + 7;
+                document.getElementById("10").innerHTML = c3;
+                document.getElementById("dee").innerHTML = sum;
+
+            } 
+            function myFunction4() { 
+
+                c4 = c4 + 1;
+                sum = sum + 6;
+                document.getElementById("30").innerHTML = c4;
+                document.getElementById("dee").innerHTML = sum;
+            }
+        
+
+
+
+     
+    </script>
+
+
+</body>
+</html>
